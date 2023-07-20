@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload = function(){
+    //     let arr=['a','b','c','d']
+    //     for(index of arr){
+    //         document.write(index+'<br>')
+    //     }
+    //     let arr1=['a','b','c','d']
+    //     for(index in arr1){
+    //         document.write(index+'<br>')
+    //     }
+
+        //  let arr=[5,7,2,1,7,3,2,10,5,15]  //bubble sort
+        // for(i=0;i<arr.length-1;i++){
+        //    for(j=i+1;j<arr.length;j++){
+        //     if(arr[i]>arr[j]){
+        //         let tmp = arr[i]
+        //         arr[i]=arr[j]
+        //         arr[j]=tmp
+        //     }
+        //    }
+        // }
+        let arr=[5,7,2,1,7,3,2,10,5,15]  //bubble sort
+            arr.sort(function(a,b){
+                return b-a
+            })
+        
+        document.write(arr)
+     }
+</script>
+<body>
+    
+</body>
+</html>

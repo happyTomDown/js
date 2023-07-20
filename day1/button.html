@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // function clickHandle(){
+    // // document.getElementById('mylable').innerHTML = 'HI'
+    // mylable.innerHTML = '<span style="color:green">hello,world</span>'
+    // }
+window.onload = function(){
+    mybutton.onclick = function(){
+    alert('yes')
+     }
+    //  mybutton.onclick = function(){
+    //      mylable.innerHTML = '<span style="color:blue">hello,world</span>'
+    
+    //  }
+
+    mybutton.addEventListener('click',function(){
+        mylable.innerHTML = '<span style="color:red">hello,world</span>'
+    })
+    
+  
+
+    // mybutton.addEventListener('click',function(){
+    //     mylable.innerHTML = '<span style="color:red">hello,world</span>'
+    // })
+}
+    </script>
+<body >
+    <!-- <button onclick="clickHandle()">click</button><p></p> -->
+    <button id="mybutton">click</button> <p></p>
+    <label id="mylable">aaa</label><p></p>
+    <label id="mylable2">bbb</label><p></p>
+</body>
+
+</html>

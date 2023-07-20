@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //'use strict'  //強制要+變數
+    window.onload = function(){
+        bn.onclick = function(){
+        let a=parseInt(aa.value)
+        let b=parseInt(bb.value)  //let可不寫
+        c.innerText = `${a}+ ${b} = ${a+b}`
+        
+        
+    }
+}
+</script>
+<body>
+   number1:<input id="aa"><p></p>
+   number2:<input id="bb"><p></p>
+   <button id="bn">add</button><p></p>
+   <label id="c"></label>
+</body>
+</html>
