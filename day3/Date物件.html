@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload = function () {
+        // let a =new Date();
+        // container.innerHTML =a.toString()  
+
+        // container.innerHTML =a.toLocaleString()   //常用時間
+
+        //container.innerHTML =a.toUTCString();  //世界協調時間
+
+        //container.innerHTML =Date.now();     // SQL要存的時間or計算花費時間
+
+        // let start_time =Date.now()
+        // bn.onclick = function(){
+        // container.innerHTML =(Date.now()-start_time)/1000;     // 按鈕按下去花多少時間結束
+        // }
+
+        //  var myDate = new Date(1690162956 * 1000);   //將SQL拿到時間資料轉換成看得懂的
+        //  myDate.toLocaleString('zh-TW',{timeZone: 'America/New_York'})   //()換到別的時區前面:'現在時區格式'後面:'時區格式'
+
+        // let ts = Date.now()+2*60*60*1000 //+2小時   加2會是+2毫秒
+        // container.innerHTML =(new Date(ts)).toLocaleString() 
+        
+        setInterval(function () {
+            let d = new Date()
+            container.innerHTML = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+        }, 1000)  //container裡面是Date帶路方法;加上setInterval(function(){},1000)
+
+
+
+
+    }
+</script>
+
+<body>
+    <button id="bn">click</button>
+    <div id="container"></div>
+</body>
+
+</html>
