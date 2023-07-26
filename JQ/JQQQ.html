@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<script>
+    $(() => {
+        $('div ul li:nth-child(2)')
+            .css('background', 'lightgreen')
+            .siblings()
+            .addClass('yellow')
+            .parent()
+            .click(function(){
+                $(this)//<=<ul>
+                    .children()
+                    .toggleClass('yellow')
+            })
+        // $('li')
+        //.first()//第一個
+        //.last()//最後一個
+        //.slice(-1)//索引(-從後面卡使)(幾,到幾)
+        //.odd()//偶數
+        //.eq(1) //第幾個
+        //.css('background-color', 'blue')
+        //.parent()//先回到爸爸ul
+        //.children()//在找到兒子li
+        //.eq(2) //陣列越界
+        //.even()//奇數
+        //.not($('li').eq(2))//不要第幾個
+        // .eq(0).css('background-color', 'blue').parent().children().eq(1)
+        // .parent().siblings().children().last().css('background-color', 'lightgreen')
+
+    })
+    
+</script>
+    <style>
+        .yellow{
+            background-color:yellowgreen
+        }
+        
+    </style>
+<body>
+    <div>
+        <ul>
+            <li>aaa</li>
+            <li>bbb</li>
+            <li>ccc</li>
+            <li>ddd</li>
+        </ul>
+    </div>
+
+
+    <ul>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+        <li>ddd</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<script>
+    $(() => {
+        $('button').on('mousedown', function (event) {
+            $('#one').html('Hi,World!<br>') //抓tag Name;抓class 是用.
+            $('#two').html(event.buttons)  //抓id#;參數加event抓事件;mousedown抓滑鼠按下(左右中124)
+            
+        })
+    })
+
+
+</script>
+
+<body>
+    <button>click</button><p></p>
+    <label id="one"></label>
+    <label id="two"></label>
+</body>
+
+</html>

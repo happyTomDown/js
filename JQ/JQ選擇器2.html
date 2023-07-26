@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<script>
+    $(() => {
+        //   $('#one,.three').html('hello')
+        $(document.getElementById('two'))//JS轉JQ
+        .html('hello')
+        .css({
+            'background-color':'lightgreen',
+            'color':'orange'
+        })
+
+
+    let element = $('div').get(2)//JQ轉JS  $('tags').get(索引) 
+    element.innerHTML='hi'
+    element.style ='background-color:lightgreen; color:red'
+    })
+
+</script>
+
+<body>
+    <div id="one" x="1">1</div> 
+    <div id="two" x="2">2</div>    
+    <div id="three" class="three"></div>
+</body>
+
+</html>
